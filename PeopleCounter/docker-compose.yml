@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+      - "1883:1883"
+    command: ./RabbitInitialize.py
+  counterapi:
+    image: ${DOCKER_REGISTRY-}counterapi
+    build:
+      context: .
+      dockerfile: CounterApi/Dockerfile
