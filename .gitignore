@@ -71,3 +71,4 @@ Help/*.html
 Help/*.zip
 *.vsidx
 *.v2
+*.bin
