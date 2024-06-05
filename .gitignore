@@ -69,3 +69,4 @@ Help/*.chm
 Help/*.htm
 Help/*.html
 Help/*.zip
+*.vsidx
